@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://th.bing.com/th/id/R.2937eac55707210de335a1bce6785a63?rik=N0609lstBzfivQ&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-5%2fWhite-Background-Widescreen-Wallpapers-16578.jpg&ehk=teM6Y2PPhOf4GCZ8A5bf31P9ZqPWJoI2ot7T4855bm0%3d&risl=&pid=ImgRaw&r=0") no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: #fff; /* Sets a default text color for readability on the dark background */
+}
+
+/* Header */
+header {
+    background-color: rgba(2, 2, 2, 0.856); /* Semi-transparent header background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-right: 320px;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 22%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Event List */
+.event-list {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Event Card */
+.event {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    background: rgba(180, 176, 176, 0.9); /* Slightly transparent white background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(210, 207, 207, 0.1);
+    text-align: center;
+    color: #c4baba;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 8px 20px rgba(231, 229, 229, 0.2);
+}
+
+.event h2 {
+    font-size: 1.8em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.event p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #636364;
+}
+
+.event button {
+    background-color: #393b3d;
+    color: rgb(224, 219, 219);
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent footer background */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .event {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+}
+.search-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#search-box {
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+    border: 1px solid #605e5e;
+    border-radius: 5px;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Search Box */
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#search-box:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Location Filter */
+.location-container {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#location-filter {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#location-filter:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Profile Management */
+.profile-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.profile-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.profile-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.profile-menu {
+    margin: 10;
+    padding-left: 22%;  ;
+    font-size: 1.5em;
+    text-align: center;
+}
+#update-profile-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#update-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Event List */
+.event {
+    background: #f9f9f9; /* Fallback color */
+    background-image: url('https://th.bing.com/th/id/R.66e97d19d32eec159faefdfc7df10266?rik=PbsEmkvGQJbcLQ&riu=http%3a%2f%2fwww.gvntmc.com%2fwp-content%2fuploads%2f2016%2f07%2fSavin-NY-Website-Background-Web.jpg&ehk=ETLy19zuHE%2blSjn3JyjQP7Y6RscHZGmQnwakl2xA3RE%3d&risl=&pid=ImgRaw&r=0'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #531313;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(197, 194, 194, 0.1);
+}
+
+.event h2 {
+    margin: 0 0 10px;
+    color: #3b4665;
+}
+
+.event p {
+    margin: 5px 0;
+}
+
+.event button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #292626;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event button:hover {
+    background-color: #5c5e5c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    header {
+        padding-right: 20px;
+    }
+}

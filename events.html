@@ -1,0 +1,45 @@
+<!-- events.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Portal</title>
+    <link rel="stylesheet" href="events-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Event Portal</h1>
+        <div class="profile-menu">
+            <span id="userName"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Search events...">
+    </div>
+
+    <div class="location-container">
+        <select id="location-filter">
+            <option value="">All Locations</option>
+            <option value="City Park">City Park</option>
+            <option value="Art Gallery">Art Gallery</option>
+            <option value="Downtown Cinema">Downtown Cinema</option>
+            <option value="Riverfront Park">Riverfront Park</option>
+            <option value="Convention Center">Convention Center</option>
+            <option value="Community Hall">Community Hall</option>
+        </select>
+    </div>
+
+    <div id="event-list" class="event-list">
+        <!-- Events will be dynamically added here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Event Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>
